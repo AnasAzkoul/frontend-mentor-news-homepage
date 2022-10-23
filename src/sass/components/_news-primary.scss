@@ -1,0 +1,28 @@
+.news-primary {
+  grid-column: 1 / 2;
+  
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, min-content);
+  column-gap: 1rem;
+  row-gap: 2rem;
+  
+  .news-primary__img {
+    grid-column: 1 / -1;
+    grid-row: 1  / span 5;
+  }
+  
+  .news-description {    
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+    p {
+      font-size: $fs-para;
+    }
+    
+    .primary-link {
+      align-self: flex-start;
+    }
+  }
+}

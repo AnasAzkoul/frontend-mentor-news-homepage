@@ -1,0 +1,122 @@
+@media screen and (max-width: 850px) {
+  .page-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, min-content);
+    row-gap: 5rem;
+  }
+  
+  .news-primary {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+  }
+  
+  .news-latest {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
+  
+  .flex {
+    flex-direction: column;
+  }
+  
+  .other-news-item {
+    &__img {
+      // width: 25%;
+      // height: 25%;
+    }
+  }
+  
+  .other-news-item {
+
+    
+    &__img {
+      height: 15rem;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .col-1-to-4 {
+    grid-column: 1 / -1;
+    grid-row: 6 / 8;
+  }
+  
+  .col-5-to-10 {
+    grid-column: 1/ -1;
+    grid-row: 8 / -1;
+  }
+  
+
+  .hamburger-menu {
+    visibility: visible;
+    height: 4rem;
+    width: 4rem;
+    position: fixed;
+    right: 2rem;
+    top: 5rem;    
+    cursor: pointer;
+    z-index: 12;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    
+    & > * {
+      height: 4px;
+      width: 100%;
+      background-color: $clr-blue-dark;
+      transition: transform 0.4s ease-in-out;
+    }
+  }
+
+  .close-btn {  
+    .line-1{
+      transform: rotate(-45deg) translateY(1.7rem);
+      // margin-top: 25px;
+    }
+    
+    .line-2{
+      height: 0;
+    }
+    
+    .line-3 {
+      transform: rotate(45deg) translateY(-1.7rem);
+    }
+  }
+  
+  
+  .nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 50%;
+    z-index: 11;
+    background-color: rgba($clr-white, 1);
+    padding: 10rem 2rem;
+    
+    display: flex;
+    flex-direction: column;
+    
+    transform: translateX(40rem);
+    transition: all 0.5s;
+    
+    .nav__list{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+      a {
+        color: $clr-blue-dark;
+        font-weight: $fw-semi-bold;
+        letter-spacing: 0.5px;
+      }
+    }
+  }
+  
+  .show-nav {
+    transform: translateX(0);
+  }
+}

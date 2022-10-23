@@ -1,0 +1,13 @@
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: $clr-gray-light;
+}
+
+.primary-heading {
+  font-size: 4rem;
+  color: $clr-blue-dark;
+  text-transform: capitalize;
+  font-weight: $fw-bold;
+}

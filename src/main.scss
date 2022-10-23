@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+@import './sass/abstract/variables'; 
+
+@import './sass/base/base'; 
+@import './sass/base/typography'; 
+@import './sass/base/utilities'; 
+
+@import './sass/layouts/container'; 
+@import './sass/layouts/page-grid'; 
+
+@import './sass/components/header'; 
+@import './sass/components/news-primary'; 
+@import './sass/components/button'; 
+@import './sass/components/latest-news'; 
+@import './sass/components/other-news'; 
+
+@import './sass/base/breakpoints'; 

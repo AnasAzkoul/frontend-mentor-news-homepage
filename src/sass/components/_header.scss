@@ -1,0 +1,28 @@
+.header {
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  
+    
+    .nav {
+      .close-menu {
+        visibility: hidden;
+      }
+      
+      &__list {
+        display: flex;
+        gap: $g-400;
+        
+        &--link {
+          a {
+            &:hover {
+              color: $clr-primary-red;
+            }
+          
+          }
+        }
+      }
+    }
+  }
+}
