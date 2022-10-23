@@ -1,8 +1,7 @@
 import React, {useState} from 'react'; 
 import logo from '../assets/images/logo.svg'; 
 import {Link} from 'react-router-dom';
-import icon_menu from '../assets/images/icon-menu.svg'; 
-import close_menu from '../assets/images/icon-menu-close.svg'; 
+
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
